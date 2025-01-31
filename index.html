@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,52 +86,44 @@
     <header>
 
         <!-- navbar-section -->
-
-        
-
         <div class="bg-secondary">
-            <div class="navbar max-w-[1280px] mx-auto">
-                <div class="navbar-start justify-around">
-                <div class="dropdown order-1 ml-48 ">
-                    <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
+            <div class="md:flex justify-around  max-w-[1280px] mx-auto py-2">
+                <div class="flex justify-around items-center ">
+                    <div class="flex items-center gap-2">
+                        <img src="image/logo-header.png" alt="">
+                        <a class=" text-2xl sora">Browse <span class="text-btn-color">4</span>Pets</a>
                     </div>
 
-                     <!-- dropdown -->
-   
+                    <div class="dropdown dropdown-end sm:hidden">
+                        <div tabindex="0" role="button" class="btn m-1">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="flex items-center">
-                <img src="image/logo-header.png" alt="">
-                <a class=" text-xl">Browse <span class="text-btn-color">4</span>Pets</a>
-                </div>
-                </div>
+
                 <div class="navbar-center hidden md:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Find a pet</a></li>
-                    <li><a>Breeds</a></li>
-                    <li><a>Contact us</a></li>
-                </ul>
+                    <ul class="menu menu-horizontal px-1 sora text-xl">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
                 </div>
-                <div class="navbar-end nav-btn gap-3">
-                <i class="fa-regular fa-bell"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a class="btn bg-white border-btn-color w-32">Login</a>
-                <a class="btn bg-btn-color w-32">Register</a>
+
+                <div class="nav-btn gap-3 sora text-xl ">
+                    <i class="fa-regular fa-bell pr-1"></i>
+                    <i class="fa-solid fa-magnifying-glass pr-1"></i>
+                    <a class="btn bg-white border-btn-color w-36">Login</a>
+                    <a class="btn bg-btn-color w-36 ">Register</a>
                 </div>
             </div>
         </div>
-
+   
         <!-- hero-section -->
 
         <section class="bg-contain bg-no-repeat bg-center   max-w-[1280px] mx-auto" style="background-image: url(./image/cat-big.png);">
