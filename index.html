@@ -75,7 +75,15 @@
 
          }
 
-
+        @keyframes ping {
+            75%, 100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        .animation-logo {
+            animation: ping 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
 
 
     </style>
@@ -91,7 +99,9 @@
             <div class="md:flex justify-around  max-w-[1280px] mx-auto py-2">
                 <div class="flex justify-around items-center ">
                     <div class="flex items-center gap-2">
-                        <img src="image/logo-header.png" alt="">
+                        <div class="animation-logo">
+                            <img src="image/logo-header.png" alt="">
+                        </div>
                         <a class=" text-2xl sora">Browse <span class="text-btn-color">4</span>Pets</a>
                     </div>
 
@@ -635,12 +645,15 @@
                     
         </section>
 
-
         
-        <div class="footer max-w-[1280px] mx-auto pb-14 pt-[450px] md:pt-56 text-justify md:items-end justify-between ml-2">
+        
+        <div class="footer max-w-[1280px] mx-auto pb-14 pt-[450px] md:pt-56 text-justify md:items-end justify-between pl-2">
             <nav>
                         <div class="flex items-center gap-3">
-                            <img src="image/logo-footer.png" alt="">
+                            <div class="animation-logo" >
+                                <img src="image/logo-footer.png" alt="">
+                            </div>
+                            
                             <h2 class="sora font-normal text-2xl">Browse<span class="text-white">4</span>Pets</h2>
                         </div>
                         <p class="sora text-base md:text-xl font-normal">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
